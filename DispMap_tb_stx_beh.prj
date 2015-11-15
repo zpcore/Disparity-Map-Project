@@ -1,0 +1,3 @@
+vhdl isim_temp "ipcore_dir/BufferLine.vhd"
+vhdl isim_temp "DispMap.vhd"
+vhdl isim_temp "DispMap_tb.vhd"

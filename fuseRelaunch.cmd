@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Murad/Desktop/Disparity_Map_VHDL/DisparityMap/DispMap_tb_isim_beh.exe" -prj "C:/Users/Murad/Desktop/Disparity_Map_VHDL/DisparityMap/DispMap_tb_beh.prj" "work.DispMap_tb" 

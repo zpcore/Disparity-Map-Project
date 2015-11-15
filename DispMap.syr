@@ -1,0 +1,500 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: DispMap.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DispMap.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DispMap"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2L-csg324
+
+---- Source Options
+Top Module Name                    : DispMap
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\ipcore_dir\BufferLine.vhd" into library work
+Parsing entity <BufferLine>.
+Parsing architecture <BufferLine_a> of entity <bufferline>.
+Parsing VHDL file "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" into library work
+Parsing entity <DispMap>.
+Parsing architecture <Behavioral> of entity <dispmap>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DispMap> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BufferLine> (architecture <BufferLine_a>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DispMap>.
+    Related source file is "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd".
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 181: Output port <full> of the instance <Line1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 181: Output port <empty> of the instance <Line1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 191: Output port <full> of the instance <Line2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 191: Output port <empty> of the instance <Line2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 201: Output port <full> of the instance <Line3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 201: Output port <empty> of the instance <Line3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 210: Output port <full> of the instance <Line4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Murad\Desktop\Disparity_Map_VHDL\DisparityMap\DispMap.vhd" line 210: Output port <empty> of the instance <Line4> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <P0<1>>.
+    Found 8-bit register for signal <P0<2>>.
+    Found 8-bit register for signal <P0<3>>.
+    Found 8-bit register for signal <P0<4>>.
+    Found 8-bit register for signal <P1<0>>.
+    Found 8-bit register for signal <P1<1>>.
+    Found 8-bit register for signal <P1<2>>.
+    Found 8-bit register for signal <P1<3>>.
+    Found 8-bit register for signal <P1<4>>.
+    Found 8-bit register for signal <P2<0>>.
+    Found 8-bit register for signal <P2<1>>.
+    Found 8-bit register for signal <P2<2>>.
+    Found 8-bit register for signal <P2<3>>.
+    Found 8-bit register for signal <P2<4>>.
+    Found 8-bit register for signal <P3<0>>.
+    Found 8-bit register for signal <P3<1>>.
+    Found 8-bit register for signal <P3<2>>.
+    Found 8-bit register for signal <P3<3>>.
+    Found 8-bit register for signal <P3<4>>.
+    Found 8-bit register for signal <P4<0>>.
+    Found 8-bit register for signal <P4<1>>.
+    Found 8-bit register for signal <P4<2>>.
+    Found 8-bit register for signal <P4<3>>.
+    Found 8-bit register for signal <P4<4>>.
+    Found 8-bit register for signal <x>.
+    Found 1-bit register for signal <wr_en1>.
+    Found 1-bit register for signal <wr_en2>.
+    Found 1-bit register for signal <wr_en3>.
+    Found 1-bit register for signal <wr_en4>.
+    Found 1-bit register for signal <valid_s>.
+    Found 1-bit register for signal <rd_en1>.
+    Found 1-bit register for signal <rd_en2>.
+    Found 1-bit register for signal <rd_en3>.
+    Found 1-bit register for signal <rd_en4>.
+    Found 25-bit register for signal <census_L>.
+    Found 8-bit register for signal <P0<0>>.
+    Found 8-bit adder for signal <x[7]_GND_4_o_add_0_OUT> created at line 1241.
+    Found 8-bit comparator greater for signal <P2[2][7]_P0[0][7]_LessThan_110_o> created at line 133
+    Found 8-bit comparator greater for signal <P2[2][7]_P1[0][7]_LessThan_111_o> created at line 134
+    Found 8-bit comparator greater for signal <P2[2][7]_P2[0][7]_LessThan_112_o> created at line 135
+    Found 8-bit comparator greater for signal <P2[2][7]_P3[0][7]_LessThan_113_o> created at line 136
+    Found 8-bit comparator greater for signal <P2[2][7]_P4[0][7]_LessThan_114_o> created at line 137
+    Found 8-bit comparator greater for signal <P2[2][7]_P0[1][7]_LessThan_115_o> created at line 133
+    Found 8-bit comparator greater for signal <P2[2][7]_P1[1][7]_LessThan_116_o> created at line 134
+    Found 8-bit comparator greater for signal <P2[2][7]_P2[1][7]_LessThan_117_o> created at line 135
+    Found 8-bit comparator greater for signal <P2[2][7]_P3[1][7]_LessThan_118_o> created at line 136
+    Found 8-bit comparator greater for signal <P2[2][7]_P4[1][7]_LessThan_119_o> created at line 137
+    Found 8-bit comparator greater for signal <P2[2][7]_P0[2][7]_LessThan_120_o> created at line 133
+    Found 8-bit comparator greater for signal <P2[2][7]_P1[2][7]_LessThan_121_o> created at line 134
+    Found 8-bit comparator greater for signal <P2[2][7]_P3[2][7]_LessThan_122_o> created at line 136
+    Found 8-bit comparator greater for signal <P2[2][7]_P4[2][7]_LessThan_123_o> created at line 137
+    Found 8-bit comparator greater for signal <P2[2][7]_P0[3][7]_LessThan_124_o> created at line 133
+    Found 8-bit comparator greater for signal <P2[2][7]_P1[3][7]_LessThan_125_o> created at line 134
+    Found 8-bit comparator greater for signal <P2[2][7]_P2[3][7]_LessThan_126_o> created at line 135
+    Found 8-bit comparator greater for signal <P2[2][7]_P3[3][7]_LessThan_127_o> created at line 136
+    Found 8-bit comparator greater for signal <P2[2][7]_P4[3][7]_LessThan_128_o> created at line 137
+    Found 8-bit comparator greater for signal <P2[2][7]_P0[4][7]_LessThan_129_o> created at line 133
+    Found 8-bit comparator greater for signal <P2[2][7]_P1[4][7]_LessThan_130_o> created at line 134
+    Found 8-bit comparator greater for signal <P2[2][7]_P2[4][7]_LessThan_131_o> created at line 135
+    Found 8-bit comparator greater for signal <P2[2][7]_P3[4][7]_LessThan_132_o> created at line 136
+    Found 8-bit comparator greater for signal <P2[2][7]_P4[4][7]_LessThan_133_o> created at line 137
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 242 D-type flip-flop(s).
+	inferred  24 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <DispMap> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 36
+ 1-bit register                                        : 9
+ 25-bit register                                       : 1
+ 8-bit register                                        : 26
+# Comparators                                          : 24
+ 8-bit comparator greater                              : 24
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/BufferLine.ngc>.
+Loading core <BufferLine> for timing and area information for instance <Line1>.
+Loading core <BufferLine> for timing and area information for instance <Line2>.
+Loading core <BufferLine> for timing and area information for instance <Line3>.
+Loading core <BufferLine> for timing and area information for instance <Line4>.
+WARNING:Xst:1710 - FF/Latch <census_L_12> (without init value) has a constant value of 0 in block <DispMap>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 242
+ Flip-Flops                                            : 242
+# Comparators                                          : 24
+ 8-bit comparator greater                              : 24
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <census_L_12> (without init value) has a constant value of 0 in block <DispMap>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <DispMap> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DispMap, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line4> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line4> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line4> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line3> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line3> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line3> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line4> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line4> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line4> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line3> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line3> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line3> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <Line1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Line1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <Line1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 241
+ Flip-Flops                                            : 241
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DispMap.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 581
+#      GND                         : 9
+#      INV                         : 8
+#      LUT2                        : 43
+#      LUT3                        : 77
+#      LUT4                        : 134
+#      LUT5                        : 60
+#      LUT6                        : 90
+#      MUXCY                       : 116
+#      VCC                         : 4
+#      XORCY                       : 40
+# FlipFlops/Latches                : 501
+#      FD                          : 28
+#      FDC                         : 4
+#      FDCE                        : 188
+#      FDE                         : 224
+#      FDP                         : 48
+#      FDPE                        : 4
+#      FDRE                        : 5
+# RAMS                             : 4
+#      RAMB18E1                    : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 10
+#      OBUF                        : 26
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             501  out of  126800     0%  
+ Number of Slice LUTs:                  412  out of  63400     0%  
+    Number used as Logic:               412  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    743
+   Number with an unused Flip Flop:     242  out of    743    32%  
+   Number with an unused LUT:           331  out of    743    44%  
+   Number of fully used LUT-FF pairs:   170  out of    743    22%  
+   Number of unique control sets:        40
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    210    17%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    135     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 505   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.667ns (Maximum Frequency: 375.002MHz)
+   Minimum input arrival time before clock: 2.496ns
+   Maximum output required time after clock: 0.765ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.667ns (frequency: 375.002MHz)
+  Total number of paths / destination ports: 4341 / 1055
+-------------------------------------------------------------------------
+Delay:               2.667ns (Levels of Logic = 2)
+  Source:            wr_en4 (FF)
+  Destination:       x_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: wr_en4 to x_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.398   0.827  wr_en4 (wr_en4)
+     LUT6:I0->O            2   0.105   0.456  _n0536_inv12 (_n0536_inv12)
+     LUT6:I4->O            8   0.105   0.378  Reset_OR_DriverANDClockEnable (Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.397          x_7
+    ----------------------------------------
+    Total                      2.667ns (1.005ns logic, 1.662ns route)
+                                       (37.7% logic, 62.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 538 / 278
+-------------------------------------------------------------------------
+Offset:              2.496ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       x_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to x_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            38   0.001   0.730  rst_IBUF (rst_IBUF)
+     LUT4:I1->O            1   0.105   0.780  _n0536_inv13_SW0 (N53)
+     LUT6:I1->O            8   0.105   0.378  Reset_OR_DriverANDClockEnable (Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.397          x_7
+    ----------------------------------------
+    Total                      2.496ns (0.608ns logic, 1.888ns route)
+                                       (24.4% logic, 75.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              0.765ns (Levels of Logic = 1)
+  Source:            valid_s (FF)
+  Destination:       valid (PAD)
+  Source Clock:      clk rising
+
+  Data Path: valid_s to valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.398   0.367  valid_s (valid_s)
+     OBUF:I->O                 0.000          valid_OBUF (valid)
+    ----------------------------------------
+    Total                      0.765ns (0.398ns logic, 0.367ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.667|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.15 secs
+ 
+--> 
+
+Total memory usage is 353692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+

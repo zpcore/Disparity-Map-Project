@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/BufferLine.vhd"
+vhdl work "DispMap.vhd"
+vhdl work "DispMap_tb.vhd"
