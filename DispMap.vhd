@@ -59,7 +59,7 @@ architecture Behavioral of DispMap is
 	 
 begin
 
-execution: process(clk, rst, pixel_in) 
+execution: process(clk, rst) 
 	begin
     if rst = '1' then -- reset low  
 	 
@@ -73,7 +73,7 @@ execution: process(clk, rst, pixel_in)
 		 P3(0) <= dout3;		P3(1) <= P3(0);	P3(2) <= P3(1);	P3(3) <= P3(2); 	P3(4) <= P3(3);
 		 P4(0) <= dout4;		P4(1) <= P4(0);	P4(2) <= P4(1);	P4(3) <= P4(2); 	P4(4) <= P4(3);
 		 	
-	   if((wr_en1='0') or ((wr_en2='0')and (rd_en1='1')) or ((wr_en3='0')and (rd_en2='1')) or ((wr_en4='0')and (rd_en3='1')) or ((valid_s='0')and (rd_en4='1'))) then
+	  if((wr_en1='0') or ((wr_en2='0')and (rd_en1='1')) or ((wr_en3='0')and (rd_en2='1')) or ((wr_en4='0')and (rd_en3='1')) or ((valid_s='0')and (rd_en4='1'))) then
 		  x <= std_logic_vector(unsigned(x)+1);
 		end if; 	
 		

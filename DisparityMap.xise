@@ -9,20 +9,17 @@
     <!-- along with the project source files, is sufficient to open and    -->
     <!-- implement in ISE Project Navigator.                               -->
     <!--                                                                   -->
-    <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+    <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
   </header>
 
-  <version xil_pn:ise_version="14.5" xil_pn:schema_version="2"/>
+  <version xil_pn:ise_version="14.6" xil_pn:schema_version="2"/>
 
   <files>
     <file xil_pn:name="DispMap.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
-    <file xil_pn:name="ipcore_dir/BufferLine.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
-    </file>
+    <file xil_pn:name="ipcore_dir/BufferLine.xco" xil_pn:type="FILE_COREGEN"/>
     <file xil_pn:name="DispMap_tb.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="24"/>
@@ -35,9 +32,7 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="87"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="87"/>
     </file>
-    <file xil_pn:name="ipcore_dir/BufferLine.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
+    <file xil_pn:name="ipcore_dir/BufferLine.xise" xil_pn:type="FILE_ISE"/>
   </files>
 
   <properties>
